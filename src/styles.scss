@@ -3,4 +3,31 @@
     --primary-dark: #003338;
     --primary: #00525a;
     --cta: #ed7d31;
+    --white: #ffffff;
+    --off-white: #e9e9e9;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--off-white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--off-white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 25px;
+}
+
+input {
+    font-size: 18px;
+    padding: 9px;
+    border: 0px;
+    border-radius: 6px;
+    width: 250px;
 }
