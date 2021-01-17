@@ -1,14 +1,12 @@
-import { Customer } from "./customer"
+import { Customer } from './customer';
+import { Product } from './product';
 
 export class Order {
-    id: number = 0;
-    time: string = '';
-    task: string = '';
     recipient: Customer;
+    products: Product[] = [];
 
-    constructor(data = {}, recipient: Customer) {
-      Object.assign(this, data);
-
-      this.recipient = recipient;
+    constructor(products: Product[], recipient: Customer) {
+      this.recipient = new Customer(recipient);
+      this.products = products;
     }
 }

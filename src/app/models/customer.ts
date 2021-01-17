@@ -1,6 +1,10 @@
-import { Order } from "./order";
+import { Order } from './order';
 
 export class Customer {
-    name: string = '';
+    name = '';
     orders: Order[] = [];
+
+    constructor(data: any) {
+        this.name = data.name;
+    }
 }
