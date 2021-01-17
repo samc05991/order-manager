@@ -1,0 +1,34 @@
+.add-order {
+    .sandwiches {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .sandwich {
+            background-color: var(--white);
+            border-radius: 6px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+            height: 235px;
+
+            img {
+                width: 250px;
+                height: 175px;
+            }
+        }
+
+        .selected {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .sandwich:hover {
+            cursor: pointer !important;
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+    }
+}

@@ -1,1 +1,37 @@
-<p>add-order works!</p>
+<div class="container add-order">
+    <h3> 1. Add a customer </h3>
+
+    <form class="form-group" [formGroup]="orderForm">
+        <div>
+            <input id="name" class="form-control" formControlName="name" required>
+            <div *ngIf="orderForm.controls.name.invalid && (orderForm.controls.name.dirty || orderForm.controls.name.touched)"
+                class="alert alert-danger">
+
+                <div *ngIf="orderForm.controls.name.errors?.required">
+                    Name is required.
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <h3> 2. Choose products </h3>
+
+    <div class="sandwiches">
+        <div
+          class="sandwich"
+          *ngFor="let sandwich of sandwiches; let i = index" 
+          [ngClass]="{'selected': sandwich.selected}"
+          (click)="selectSandwich(sandwich)">
+              <h3>{{sandwich.name}}</h3>
+              <img class="img-responsive" src="assets/images/{{sandwich.image}}">
+        </div>
+    </div>
+
+    <button
+        type="button"
+        class="button primary"
+        (click)="addOrder()"
+        [disabled]="orderForm.status !== 'VALID' || selectedSandwiches.length === 0">
+        Submit Order
+    </button>
+</div>
