@@ -1,0 +1,20 @@
+.button {
+    padding: 10px;
+    border: 0px;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.button:disabled {
+  background-color: #00525a9e;
+  cursor: not-allowed;
+}
+
+.button:focus {
+  border: 1px solid var(--primary);
+}
