@@ -12,7 +12,8 @@ To serve from an express server (required for deployment)
 # Assignment Review
 
 [Github]: https://github.com/samc05991/order-manager/pulls?q=is%3Apr+is%3Aclosed/ "Github"
-[Agricafe] : https://agricafe.herokuapp.com/ "Agricafe"
+
+[Agricafe]: https://agricafe.herokuapp.com/ "Agricafe"
 
 I decided to use Angular for this as I'm most comfortable with it and would be quickest to get going. 
 
