@@ -1,0 +1,60 @@
+{
+  "sandwiches": [
+    {
+      "name": "Bacon",
+      "image": "bacon.jpg"
+    },
+    {
+      "name": "Bacon, egg and cheese",
+      "image": "beg.jpg"
+    },
+    {
+      "name": "Baked bean",
+      "image": "bean.jpg"
+    },
+    {
+      "name": "Barbecue",
+      "image": "bbq.jpg"
+    },
+    {
+      "name": "Breakfast roll",
+      "image": "breakfast.jpg"
+    },
+    {
+      "name": "Cheese",
+      "image": "cheese.jpg"
+    },
+    {
+      "name": "Chicken salad",
+      "image": "chicken.jpg"
+    },
+    {
+      "name": "Chip butty",
+      "image": "chip.jpg"
+    },
+    {
+      "name": "Ham and cheese",
+      "image": "hamcheese.jpg"
+    },
+    {
+      "name": "Italian beef",
+      "image": "beef.jpg"
+    },
+    {
+      "name": "Jam",
+      "image": "jam.jpg"
+    },
+    {
+      "name": "Panini",
+      "image": "panini.jpg"
+    },
+    {
+      "name": "Toast",
+      "image": "toast.jpg"
+    },
+    {
+      "name": "Toastie",
+      "image": "toastie.jpg"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="container order-list">
+    <table>
+        <thead>
+            <th>Sequence</th>
+            <th>Time</th>
+            <th>Task</th>
+            <th>Customer</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td>{{task.sequence}}</td>
+                <td>{{task.time}}</td>
+                <td>{{task.task}}</td>
+                <td>{{task.customer ? task.customer.name : ''}}</td>
+                <td (click)="updateTask(task)">
+                    <i [ngClass]="getIcon(task)"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button
+        type="button"
+        class="button primary"
+        (click)="takeBreak()">
+          Take A Break
+    </button>
+</div>

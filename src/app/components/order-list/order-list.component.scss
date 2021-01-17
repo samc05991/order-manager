@@ -1,0 +1,19 @@
+.order-list {
+    table {
+        padding: 0px 20px;
+        text-align: center;
+        background-color: var(--white);
+        border-radius: 6px;
+        border-spacing: 10px;
+        margin: 0 auto;
+
+        td {
+            font-size: 20px;
+
+            i {
+                cursor: pointer;
+                color: var(--primary);
+            }
+        }
+    }
+}

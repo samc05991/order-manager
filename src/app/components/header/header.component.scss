@@ -1,0 +1,19 @@
+
+.header {
+    background-color: var(--primary-dark);
+    padding: 10px;
+
+    .nav-bar {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+
+        .nav-item {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px;
+        }
+    }
+}
